@@ -52,7 +52,7 @@ void loop() {
       motor1.step(10, FORWARD, SINGLE); //move raft towards starting point (contact switch)
     }
     raftFound = true; //raft has reached contact switch
-    Serial.println("Ahh! There it is. :)");
+    Serial.println("Raft found! :)");
     motor1.release(); //stop moving towards contact switch
     setColor(0, 255, 0); // Set LED to green indicating raft found
     delay(700);
